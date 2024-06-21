@@ -1,0 +1,40 @@
+.citypagecard {
+  background-color: #bcf1ff;
+  padding-top: 20px;
+  &__return {
+    font-size: 30px;
+    background-color: #07caff;
+    font-weight: 600;
+    width: 50px;
+    margin-left: 100px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  &__header {
+    color: white;
+    background-color: #07caff;
+    width: fit-content;
+    padding: 20px 100px;
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  &__image {
+    margin-left: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+  }
+  &__info {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #07caff;
+    border: 10px solid #0e4462;
+    padding: 100px 100px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,36 @@
+.citypicture-container {
+  position: relative;
+}
+
+.picture-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.picture-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 700ms, transform 700ms;
+}
+
+.picture-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.picture-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 700ms, transform 700ms;
+}
+
+.citypicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    overflow: hidden;
+    border: 20px solid #07caff;
+  }
+}

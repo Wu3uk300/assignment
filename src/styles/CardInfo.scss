@@ -1,0 +1,57 @@
+.cardinfo {
+  width: 100%;
+  height: 100%;
+
+  perspective: 300px;
+  &__text {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+
+  &__inner {
+    border: 2px solid #0983b2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  &:hover &__inner {
+    transform: rotateY(180deg);
+  }
+
+  &__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  &__back {
+    background-color: #0ffff8;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-text {
+      background-color: #0e4462;
+      padding: 10px;
+      width: 80%;
+      height: fit-content;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__data {
+    width: 70%;
+    padding: 10px 10px;
+    background-color: #bcf1ff;
+    border: 3px solid #0983ae;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 20px;
+  }
+}
