@@ -20,7 +20,7 @@ interface CardShapeProps {
 }
 
 const CardShape: React.FC<CardShapeProps> = async ({ city, index }) => {
-  const accessKey = "YGgfJPTeefrt54Wu4JPqrU60DnlWl2cAeJgsq1CASC62GUu6BVCrJLNv";
+  const accessKey = "DfRX8EoMTOmfvVv8p8DXrwXygHUJThjH0C23W3QMgc09IHMPpqcthceP";
   const query = encodeURIComponent(city.city);
   const response = await fetch(
     `https://api.pexels.com/v1/search?query=${query}&per_page=1`,
@@ -31,6 +31,7 @@ const CardShape: React.FC<CardShapeProps> = async ({ city, index }) => {
     }
   );
   const data = await response.json();
+  console.log(data.data);
 
   return (
     <Link href={`/cities/${index}`}>

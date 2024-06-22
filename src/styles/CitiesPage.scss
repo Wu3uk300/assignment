@@ -10,6 +10,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    &button {
+      background-color: red;
+    }
   }
   &__inputData input {
     width: 70%;
